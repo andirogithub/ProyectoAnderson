@@ -1,0 +1,24 @@
+/* Footer */
+
+.footer-container {
+
+    @extend %grilla-grid;
+    grid-template-rows: auto;
+    margin-top: 10%;
+
+    p {
+        justify-self: start;
+    }
+
+    div {
+        width: 30%;
+        justify-self: end;
+    }
+
+    i {
+        color: white;
+        margin: 5%;
+    }
+
+}
+

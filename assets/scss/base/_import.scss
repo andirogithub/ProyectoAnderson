@@ -1,0 +1,14 @@
+/* Base */
+@import '../base/extends';
+
+/* Components */
+@import '../components/header';
+@import '../components/main';
+@import '../components/footer';
+
+/*Main Productos*/
+@import '../components/main-productos.scss';
+
+/*Main Contacto*/
+@import '../components/main-contacto.scss'
+

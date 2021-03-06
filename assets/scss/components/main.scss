@@ -1,0 +1,143 @@
+/* Main */
+
+* {
+    @extend %default
+}
+
+body {
+    @extend %font-and-bg
+}
+
+h1,h2 {
+    @extend %titulos
+}
+
+/* Productos */
+
+.img-productos {
+    
+    @extend %grilla-flex;
+    
+    img {
+        width: 400px;
+        height: auto;
+    }
+
+    a {
+        @extend %animacion-productos;
+        }
+}
+
+/* Marcas */
+
+.img-marcas {
+
+    @extend %grilla-flex;
+
+    img {
+        width: 300px;
+        height: auto;
+    }
+
+    a {
+        margin: 3%;
+        transition: all 1s;
+
+        &:hover {
+            margin: 3%;
+            transform: scale(1.2)
+        }
+    }
+}
+
+/* Novedades */
+
+.img-novedades {
+    
+    @extend %grilla-grid;
+    grid-template-rows: auto;
+
+    img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+.img-suscribite {
+
+    transition: all 2s;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+}
+
+/* Nosotros */
+
+@keyframes animasotros {
+    0% {
+        color: red;
+    }
+
+    33% {
+        color: yellow
+    }
+
+    66% {
+        color: green;
+    }
+}
+
+.nosotros {
+
+    @extend %grilla-grid;
+    grid-template-rows: auto auto;
+    margin-left: 8%;
+    margin-right: 8%;
+
+    h2 {
+        color: red;
+        margin-bottom: 5%;
+        @extend %animasotros;
+    }
+    
+    p {
+        color: red;
+        font-size: x-large;
+        grid-row-start: 2;
+        @extend %animasotros;
+    }
+
+    img {
+        grid-column-start: 2;
+        grid-row: 1 / 3;
+        @extend %size-logo;
+    }
+
+}
+
+/* Contacto */
+
+.contacto {
+    margin-top: 6%;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

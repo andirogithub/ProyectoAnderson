@@ -1,0 +1,8 @@
+/* Main Productos */
+
+.card {
+    img{
+        @extend %imagenes-productos;
+        @extend %animacion-productos;
+    }
+}

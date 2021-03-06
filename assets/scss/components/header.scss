@@ -1,0 +1,10 @@
+/* Header*/
+
+.logo {
+    @extend %size-logo
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
